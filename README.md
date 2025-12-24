@@ -19,8 +19,8 @@ nmap -Pn -D 192.168.56.115,192.168.56.200,ME,192.168.56.250 192.168.56.108 (Scan
 
 ----------------------------------------------------------------------------------<br>
 nmap -sV --script=http-enum.nse google.com -v<br>
-nmap -D RND:10 <target ip><br>
-nmap -f <target ip><br>
-nmap -mtu 24 <target ip><br>
+nmap -D RND:10 target ip<br>
+nmap -f target ip (FRAGMENTED PACKETS 8 Bytes fixed)<br>
+nmap -mtu 24 target ip (FRAGMENTED PACKETS 24 Bytes (Multiple by 8) 8, 16, 24, 32....<br>
 <br>
 scanme.nmap.org
